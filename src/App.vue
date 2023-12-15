@@ -14,13 +14,15 @@ export default {
 
 
 <style>
-@font-face {
-  font-family: 'RobotoMono';
-  src: url('./fonts/RobotoMono-Thin.ttf');
+:root {
+  --white: #fff;
+
+  --bg-app-light: #536976;
+  --bg-app-dark: #292e49;
 }
 
 * {
-  font-family: 'RobotoMono', monospace;
+  font-family: monospace, sans-serif;
 }
 
 body {
@@ -35,7 +37,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  color: #fff;
-  background: linear-gradient(to right, rgb(83, 105, 118), rgb(41, 46, 73));
+  color: var(--white);
+  background: linear-gradient(to right, var(--bg-app-light), var(--bg-app-dark));
 }
 </style>

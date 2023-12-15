@@ -1,5 +1,6 @@
 <script>
 export default {
+  // Exports the Component
   props: ['value']
 }
 </script>
@@ -11,9 +12,13 @@ export default {
 </template>
 
 <style>
+:root {
+  --bg-display: #0004;
+}
+
 .display {
   grid-column: span 4;
-  background-color: #0004;
+  background-color: var(--bg-display);
 
   display: flex;
   justify-content: flex-end;

@@ -1,5 +1,6 @@
 <script>
 export default {
+  // Exports the Component
   props: {
     label: {},
     operation: { type: Boolean },
@@ -10,8 +11,7 @@ export default {
 </script>
 
 <template>
-  <button class="btn" 
-  :class="{ double, triple, operation }">
+  <button class="btn" :class="{ double, triple, operation }">
     {{ label }}
   </button>
 </template>
